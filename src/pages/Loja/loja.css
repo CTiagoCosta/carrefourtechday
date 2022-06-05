@@ -1,0 +1,242 @@
+.container{
+    max-width: 800px;
+    margin: 14px auto;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* body {
+  background-color: #FFF;
+  color: #000;
+  display: flex;
+  justify-content:center;
+
+  
+} */
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  margin: 2rem 0;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-address {
+  margin: 4rem 0;
+}
+
+  label {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color:#95a3b3;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+  }
+
+  input {
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 1.5rem;
+    background-color: #d4dbe4;
+    border:none;
+    color: rgb(27, 27, 27);
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+
+    /* &:focus {
+      border:2px solid #0896dd;
+      background-color: #fff;
+    } */
+  }
+
+
+  ::placeholder {
+    color: #00000063;
+  }
+
+
+form {
+  max-width: 50rem;
+  margin: 1rem auto;
+  background-color: rgba(4, 61, 167, 0.904);
+  padding: 1rem 0;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content:center;
+  font-family: 'Nanum Gothic', sans-serif;
+  box-shadow: 1px 1px 4px #c3c3c3;
+
+}
+
+
+.input-form  {
+
+  margin: 1rem 0;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+  label {
+   
+    justify-content: flex-start;
+    
+  }
+
+  .input {
+    width: 60%;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    margin-top: .5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+
+
+  }
+  .busca-btn{
+    height: 35px;
+    margin: 15px;
+    border: 0;
+    border-radius: 7px;
+    background-color: rgba(4, 61, 167, 0.904);
+    color: #FFF;
+    font-size: .8em;
+    cursor: pointer;
+    
+  }
+
+
+  .action a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color:  rgba(4, 61, 167, 0.904);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    
+}
+
+
+  table{
+    border:1px solid #CCC;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption{
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td{
+    padding: .62em;
+    text-align: center;
+  }
+  
+  table th{
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  table td .action{
+    border:0;
+    padding: 5px;
+    margin-right: 2px;
+    align-items: center;
+    display: inline-block;
+    border-radius: 4px;;
+  }
+  
+  table td .action svg{
+    vertical-align: middle;
+  }
+  
+  table td .badge{
+    padding: 3px;
+    border-radius: 3px;
+    color: #FFF;
+  }
+  
+  @media screen and (max-width: 600px){
+    table{
+      border: 0;
+    }
+  
+    table caption{
+      font-size: 1.3em;
+    }
+  
+    table thead{
+      border:none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  
+    table tr{
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .65em;
+    }
+  
+    table td{
+      border-bottom: 1px solid #DDD;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+  
+    table td::before{
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  
+    table td:last-child{
+      border-bottom: 0;
+    }
+  
+  }
